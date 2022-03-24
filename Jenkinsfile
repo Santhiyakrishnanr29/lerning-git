@@ -14,7 +14,7 @@ pipeline {
         stage('Build Image') {
             steps {
                script {
-                 dockerImage = docker.build imagename
+                 dockerImage = docker.build mynginxapp
                }
             }
         }
