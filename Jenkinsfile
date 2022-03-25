@@ -6,7 +6,7 @@ pipeline {
     }
     agent any
     stages {
-        stage('Git Clone') {
+        stage('Git Checkout') {
             steps {
                 git([url: 'https://github.com/Santhiyakrishnanr29/lerning-git.git', branch: 'master', credentialsId: 'Santhiyakrishnanr29(github token)'])
             }
